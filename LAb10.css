@@ -1,0 +1,130 @@
+body{
+    background-color: black;
+    margin:0;
+    overflow: hidden;
+}
+#curtain{
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease-out;
+}
+#curtain:hover {
+    transform: translate(-50%, -55%);
+}
+#lamp{
+    height: 400px;
+    width: 150px;
+    padding: 0;
+    position: absolute;
+    left: calc(50% - 120px);
+    margin-right: 50%;
+}
+#lamp div{
+    position: absolute;
+}
+#trapezoid{
+    width: 120px;
+    height: 100px;
+    top: 0;
+    background: rgb(0, 150, 177);
+    left : 15px;
+    transform: perspective(120px) rotateX(45deg);
+}
+#pillar1{
+    background: rgb(183, 182, 188);
+    width: 10px;
+    height: 40%;
+    top: 30px;
+    right: calc(50% - 5px);
+}
+#circle1{
+    background: rgb(0, 150, 177);
+    width: 15px;
+    height: 15px;
+    border-radius: 25px;
+    top: 43%;
+    right: calc(50% - 7.5px);
+}
+#pillar2{
+    background: rgb(183, 182, 188);
+    width: 15px;
+    height: 40%;
+    top: 45%;
+    right: calc(50% - 7.5px);
+}
+#circle2{
+    background: rgb(0, 150, 177);
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    top: 80%;
+    right: calc(50% - 15px);
+}
+#semicircle{
+    width: 50px;
+    height: 25px; 
+    border: 2px;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    background: rgb(183, 182, 188);
+    top: 83%;
+    right: calc(50% - 25px);
+}
+#rope{
+    background: rgb(183, 182, 188);
+    height: 50px;
+    width: 2px;
+    top: calc(35% - 50px);
+    left: calc(25% - 1px);
+}
+#circle3{
+    background: rgb(230, 202, 93);
+    width: 8px;
+    height: 8px;
+    border-radius: 25px;
+    top: 35%;
+    left: calc(25% - 4px);
+}
+#light{
+    position: absolute;
+    width: 70px;
+    height: 0;
+    border-left: 450px solid transparent;
+    border-right: 450px solid transparent;
+    border-bottom: 900px solid yellow;
+    left: calc(50% - 485px);
+    top: 30px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+    pointer-events: none;
+}
+#perfomance {
+    position: absolute;
+    width: 75vh;
+    height: 400px;
+    left: calc(50% - 40vh);
+    bottom: 45px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in; 
+}
+#perfomance img {
+    position: absolute;
+    bottom: 0;
+}
+#hat {
+    left: 65%;
+    width: 35%;
+}
+#magician {
+    width: 64%;
+    right: 30%;
+}
+#bird, #rabbit {
+    left: calc(76%);
+    bottom: 20px !important;
+    width: 14%;
+    transition: transform 0.5s ease-out;
+}
